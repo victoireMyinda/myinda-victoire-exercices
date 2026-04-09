@@ -60,3 +60,14 @@ Reponses :
 
  0 : Aucune permission pour les autres : 0 0 0.
 
+ 3. Recherche avancée de fichiers Dans un dossier contenant plusieurs fichiers, écrivez les commandes permettant de : • trouver tous les fichiers .log • trouver tous les fichiers de plus de 5 Mo • trouver tous les fichiers modifiés il y a moins de 2 jours • supprimer uniquement les fichiers .tmp Expliquez le rôle de la commande utilisée.
+
+ Reponse :
+  Tout d'abord, l'explication de cette commande avec les options :
+   find [chemin] [critères] [action]  : 
+   **find . -type f -name "*.log"** : Trouver tous les fichiers .log
+   **find . -type f -size +5M"** : Trouver tous les fichiers de plus de 5 Mo
+   **find . -type f -mtime -2** : Trouver les fichiers modifiés il y a moins de 2 jours
+   **find . -type f -name "*.tmp" -delete** : Supprimer uniquement les fichiers .tmp
+ 
+
