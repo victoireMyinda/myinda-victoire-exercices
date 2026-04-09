@@ -1,4 +1,5 @@
 Partie 1 – Linux et Terminal (8 questions)
+ : 
 1. Navigation et structure Linux
 Créez l’arborescence suivante depuis le terminal uniquement :
 projet-linux/
@@ -49,3 +50,13 @@ Créez un fichier nommé deploy.sh puis :
 • donnez au groupe le droit de lecture et exécution
 • retirez tous les droits aux autres utilisateurs
 Expliquez la signification du mode de permission utilisé.
+
+Reponses :
+**touch deploy.sh**
+**chmod 750 deploy.sh**
+ 7 : combinaison de 3 permission 4(W), 2(R), 1(X), user ces 3 permissions : Lecture, Modification et Execution
+
+ 5 : combinaison de 2 permissions 4(W) et 1(X), le group a le droit d'ecriture et execution uniquement
+
+ 0 : Aucune permission pour les autres : 0 0 0.
+
